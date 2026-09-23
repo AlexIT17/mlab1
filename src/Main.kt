@@ -7,9 +7,9 @@ fun main() {
     val x = scanner.nextDouble()
     if (x < -1) {
         print("Введите n: ")
-        val n = scanner.nextDouble()
+        val n = scanner.nextInt()
         var res: Double = 0.0
-        var i: Int = 1
+        var i: Int = 0
         while (i <= n) {
             res += Math.pow(-1.0, i + 1.0) / ((2 * i + 1) * Math.pow(x, 2.0 * i + 1.0))
             i++
